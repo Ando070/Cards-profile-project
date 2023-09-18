@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+  
+   .numList{
+    margin-top: 24px;
+    border: 1px solid black;
+    width: 600px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color:  #009688;
+  }
+  .numList div{
+    background-color: #231E39;
+    border-radius: 5px;
+    border: 1px solid silver;
+    display: flex;
+    gap: 6px;
+    padding: 60px;
+    width: auto;
+    justify-content: left;
+  } 
+  .numList div img{
+    box-shadow: 0 0 10px blue;
+    border-radius: 50%;
+    width: 100px;
+    background-color: silver;
+
+  }
+  .numList div span {
+  font-size: 20px;
+  line-height: 21px;
+  color: red;
+}
+
+.numList div p {
+    margin: 30px 0px 50px 0px;
+    color: blue;
+    flex-direction: column;
+  }
+
+.numList div p1{
+  color: orange;
+  flex-direction: column;
+  margin: 60px 0px 50px 0px;
+  padding-left: 10px;
+}
+
+
+
+</style>
+</head>
+<body>
+
+  <p id="text1"></p>
+
+  <input style="border-color: black" id="input" type="text">
+  <button onclick="addBtn()" id="add">Add</button>
+  <button onclick="deleteBtn()" id="del">Delete</button>
+  <button onclick="requestBtn()" id="req">Request</button> 
+
+  <div class="numList"></div>
+  <div class="div"></div>
+  <span id="1"></span>
+  
+  
+
+  <script  src="script.js"></script>
+
+</body>
+</html>

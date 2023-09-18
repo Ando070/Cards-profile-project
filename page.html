@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <p id="text"></p>
+  
+  <div class="inf-content">
+    
+    <br>
+    <img id="image" src="" alt="img">
+    <br>
+    <strong>
+      <div id="first_name">
+      </div><br>
+    </strong>
+    
+    <strong>
+    <div id="last_name">
+      </div><br>
+    </strong>
+
+    <strong>
+      <div id="email">
+        </div><br>
+      </strong>
+
+      <strong>
+        <div id="phone_number">
+        </div><br>
+      </strong>
+      
+      <strong>
+        <div id="gender">
+        </div><br>
+      </strong>
+
+      <strong>
+      <div id="date_of_birth">
+        </div>
+      </strong>
+      <br>
+    </div>
+    
+    
+  </div>
+
+
+  <script>
+    let userJson = localStorage.getItem("user_info")
+    let user = JSON.parse(userJson)
+    document.getElementById("first_name").innerText = "First_name-  " + user.first_name
+    document.getElementById("last_name").innerText = "Last_name- " + user.last_name
+    document.getElementById("email").innerText = "Email- " + user.email
+    document.getElementById("phone_number").innerText = "Phone_number- " + user.phone_number
+    document.getElementById("gender").innerText = "Gender- " + user.gender
+    document.getElementById("date_of_birth").innerText = "Date_Of_Birth- " + user.date_of_birth
+    let url = user.avatar
+    document.getElementById("image").src = url
+
+
+  //  console.log(user.first_name,user.last_name,user.phone_number,user.date_of_birth ,user.gender,user.email,user.avatar,user);
+   
+  </script>
+
+</body>
+</html>
